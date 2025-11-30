@@ -1,4 +1,4 @@
-﻿// <copyright file="Elvenland.cs" company="MUnique">
+// <copyright file="Elvenland.cs" company="MUnique">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
@@ -61,9 +61,9 @@ internal class Elvenland : BaseMapInitializer
     protected override IEnumerable<MonsterSpawnArea> CreateMonsterSpawns()
     {
         yield return this.CreateMonsterSpawn(21, this.NpcDictionary[418], 0, 128, 128, 245, 80); // Strange Rabbit
-        yield return this.CreateMonsterSpawn(22, this.NpcDictionary[419], 0, 251, 128, 245, 45); // Polluted Butterfly
-        yield return this.CreateMonsterSpawn(23, this.NpcDictionary[420], 0, 128, 0, 128, 45); // Hideous Rabbit
-        yield return this.CreateMonsterSpawn(24, this.NpcDictionary[421], 0, 128, 0, 128, 30); // Werewolf
+        yield return this.CreateMonsterSpawn(22, this.NpcDictionary[421], 0, 251, 128, 245, 45); // Polluted Butterfly
+        yield return this.CreateMonsterSpawn(23, this.NpcDictionary[419], 0, 128, 0, 128, 45); // Hideous Rabbit
+        yield return this.CreateMonsterSpawn(24, this.NpcDictionary[420], 0, 128, 0, 128, 30); // Werewolf
         yield return this.CreateMonsterSpawn(25, this.NpcDictionary[422], 128, 251, 0, 128, 30); // Cursed Lich
         yield return this.CreateMonsterSpawn(26, this.NpcDictionary[423], 128, 251, 0, 128, 20); // Totem Golem
         yield return this.CreateMonsterSpawn(27, this.NpcDictionary[424], 128, 251, 0, 128, 20); // Grizzly
@@ -104,7 +104,7 @@ internal class Elvenland : BaseMapInitializer
         {
             var monster = this.Context.CreateNew<MonsterDefinition>();
             this.GameConfiguration.Monsters.Add(monster);
-            monster.Number = 419;
+            monster.Number = 421;
             monster.Designation = "Polluted Butterfly";
             monster.MoveRange = 3;
             monster.AttackRange = 1;
@@ -132,7 +132,7 @@ internal class Elvenland : BaseMapInitializer
         {
             var monster = this.Context.CreateNew<MonsterDefinition>();
             this.GameConfiguration.Monsters.Add(monster);
-            monster.Number = 420;
+            monster.Number = 419;
             monster.Designation = "Hideous Rabbit";
             monster.MoveRange = 3;
             monster.AttackRange = 1;
@@ -160,7 +160,7 @@ internal class Elvenland : BaseMapInitializer
         {
             var monster = this.Context.CreateNew<MonsterDefinition>();
             this.GameConfiguration.Monsters.Add(monster);
-            monster.Number = 421;
+            monster.Number = 420;
             monster.Designation = "Werewolf";
             monster.MoveRange = 2;
             monster.AttackRange = 1;
